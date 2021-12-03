@@ -1,0 +1,6 @@
+<van-cell-group>
+	<van-field type="numbers" value="{{phoneNumber}}" center clearable="{{true}}" label="手机号" placeholder="请输入手机号"  error-message="{{errormessage}}" border="{{true}}" use-button-slot bindinput="handleText">
+
+		<van-button slot="button" size="small" type="info" bindtap="handleBtn" >确定</van-button>
+	</van-field>
+</van-cell-group>

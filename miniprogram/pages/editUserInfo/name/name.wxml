@@ -1,0 +1,11 @@
+<van-cell-group>
+
+	<van-field type="numbers" value="{{nickName}}" center clearable="{{true}}" label="昵称" placeholder="修改昵称" error-message="{{errormessage}}" border="{{true}}" use-button-slot bindinput="handleText">
+		<van-button slot="button" size="small" type="info" bindtap="handleBtn">确定</van-button>
+	</van-field>
+</van-cell-group>
+<view class="wxbtn">
+	<van-button slot="button" icon="chat-o" size="small" type="primary" 
+	open-type="getUserInfo"  bindgetuserinfo="bindGetUserInfo">设置成微信昵称</van-button>
+
+</view>

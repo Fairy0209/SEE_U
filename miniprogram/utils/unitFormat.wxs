@@ -1,0 +1,10 @@
+var unitFormat = function(number){
+  if(number>=10000){
+    number = (number/10000).toFixed(1)+'W';
+  }
+  else if(number>=1000){
+    number = (number/1000).toFixed(1)+'K';
+  }
+  return number;
+}
+module.exports.unitFormat = unitFormat;

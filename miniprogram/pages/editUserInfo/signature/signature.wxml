@@ -1,0 +1,13 @@
+<input class="input" type="text" placeholder="在这里输入你的个性签名" value="{{signature}}" bindinput="handleText" />
+
+<button class='btn1' bindtap="handleBtn">
+	<text class="iconfont icon-goods6"> </text>
+	<view> 确认修改</view>
+</button>
+
+<view class="showout">
+	<view class="showtable">
+		<view class="lable">个性签名 :</view>
+		<view class="show"> {{signature}}</view>
+	</view>
+</view>

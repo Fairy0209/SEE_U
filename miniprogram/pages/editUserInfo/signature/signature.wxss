@@ -1,0 +1,49 @@
+/* miniprogram/pages/editUserInfo/signature/signature.wxss */
+
+.btn1 {
+  width: 90%;
+  margin-top: 20rpx;
+  background-color:rgba(4, 198, 242, 0.447);
+  color: rgb(255, 255, 253);
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btn1 view{
+  font-size: 15px;
+}
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
+input{
+  border:8px rgba(4, 198, 242, 0.227) solid;
+  height: 30px;
+  border-radius: 20px;  
+  background-color: rgba(199, 234, 242, 0.047);
+  color: rgb(21, 134, 233);
+  font-size: 20px;
+}
+.showout{
+  margin-top: 6%;
+  border-top: 2px rgba(4, 198, 242, 0.447) dashed;
+}
+.showtable{
+
+  justify-content: left;
+  margin-top:170rpx;
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 20rpx;
+  background-color:rgba(0, 0, 0, 0.433);
+  color: rgb(255, 255, 255);
+  border-radius: 28rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.lable{
+  padding: 5%;
+}
