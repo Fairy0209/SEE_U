@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-switch":"@vant/weapp/switch",
+    "van-cell":"@vant/weapp/cell",
+    "van-dialog": "@vant/weapp/dialog"
+  }
+}

@@ -1,0 +1,70 @@
+@import "style/iconfont/iconfont.wxss";
+
+.user-info{
+  height:150rpx;
+  width:100%;
+  border-bottom: rgba(0, 0, 0, 0.5) solid;
+  border-left: none;
+  border-right: none;
+  display:flex;
+  align-items: center;
+}
+.user-info image{
+  margin-left: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-info text{
+  margin-left: 20rpx;
+}
+.user-info button{
+  margin-top: 90%;
+  width: 80%;
+  height: 50%;
+  text-align: center;
+  border-radius: 98rpx;
+  font-size: 120%;
+  color: rgb(249, 94, 97,0.7);
+  background-color: rgba(155, 231, 249, 0.453);
+  
+}
+.nickName{
+  color: rgb(9, 112, 98);
+}
+.user-list{
+  margin-top: 60rpx;
+}
+.user-list-item{
+  height: 70rpx;
+  border-bottom: 1px rgba(1, 7, 8, 0.453) solid;
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:#1c3c62;
+}
+
+.showout{
+  margin-top: 6%;
+  border-top: 0.5px rgba(0, 0, 0, 0.447) solid;
+}
+.showtable{
+
+  justify-content: left;
+  margin-top:190rpx;
+  /*margin-left: 10%;*/
+  width: 100%;
+  margin-top: 0rpx;
+  background-color:rgb(107, 103, 103);
+  color: rgb(255, 255, 255);
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.lable{
+  padding: 5%;
+}
+

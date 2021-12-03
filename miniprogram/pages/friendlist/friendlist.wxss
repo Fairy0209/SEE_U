@@ -1,0 +1,28 @@
+/* miniprogram/pages/friendList/friendList.wxss */
+
+.friendList{ margin-top:40rpx;}
+.friendList-item{ height:120rpx; border-bottom: 1px #b4b5b6 dashed; padding:10rpx; display: flex; align-items: center; justify-content: space-between;}
+.friendList-item view{ display: flex; align-items: center;}
+.friendList-item image{ width:100rpx; height:100rpx; border-radius: 50%;}
+
+/*search*/
+.search{
+  background-color: #f2f2f2;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  }
+  .search-img{
+    margin: auto 0 auto 20px;
+  }
+  .search input{
+    height: 100%;
+    width: 600rpx;
+    margin-left: 10rpx;
+    font-size: 35rpx;
+  }
+  
+  .xximg{
+    margin: auto 0 auto 10px;
+  }

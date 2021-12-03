@@ -1,0 +1,54 @@
+.index-swiper{
+  height: 300rpx;
+  margin: 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.index-swiper image{
+  width: 100%;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.index-tab{
+  display: flex;
+}
+.index-tab view{
+  flex: 1;
+  text-align: center;
+  padding: 10rpx;
+  margin: 10rpx;
+}
+.index-tab view.active{
+ border-bottom: 3px rgb(38, 160, 99) solid;
+ color: rgb(38, 160, 99);
+ font-weight:bold;
+}
+
+.index-list{
+  display: flex;
+  flex-wrap: wrap;
+  color: goldenrod;
+}
+.index-list-item{
+  width: 100%;
+  margin: 10rpx 0;
+  border-bottom: 5rpx rgb(15, 27, 20)  solid;
+  border-radius: 30rpx ;
+}
+.index-list-item image{
+  border-radius: 10rpx ;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  border: 8rpx rgba(46, 56, 63, 0.3)  dashed;
+}
+.index-list-text{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.index{
+  padding-top: 80rpx;
+}

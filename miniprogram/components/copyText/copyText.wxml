@@ -1,0 +1,5 @@
+<!--components/copyText/copyText.wxml-->
+<view class="copyText">
+<text bindtap="handleCopyText" class="iconfont icon-TABbar-fill3" ></text>
+</view>
+

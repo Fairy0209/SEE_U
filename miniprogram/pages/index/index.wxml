@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<wxs src="./../../utils/wordSplit.wxs" module="m1"/>
+<wxs src="./../../utils/unitFormat.wxs" module="m2"/>
+<!-- 写了两个组件进行展示时优化，一个点赞优化一个名字过长优化 -->
+<search />
+<!-- 搜索模块 -->
+<view class="index">
+  <swiper class="index-swiper" indicator-dots="{{indicatorDots}}"
+        autoplay="{{true}}" circular="{{true}}" indicator-dots="{{true}}">
+         <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}"class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+
+      <view class="index-tab">
+        <view class="{{current == 'links' ? 'active' : ''}}" data-current="links" bindtap="handlecurrent">推荐</view>
+        <view class="{{current == 'time' ? 'active' : ''}}" data-current="time" bindtap="handlecurrent">最新</view>
+      </view>
+
+    <view class="index-list">
+      <view class="index-list-item" wx:for ="{{listData}}" wx:key="index">
+        <image src="{{item.userPhoto}}"
+        mode="aspectFill" data-id="{{item._id}}" bindtap="handledetil"
+        ></image>
+        <view class="index-list-text">
+          <text>{{m1.wordSplit(item.nickName)}}</text>
+          <text data-id="{{ item._id }}" bindtap="handleLinks">
+            <text>{{m2.unitFormat(item.links)}}💓</text>
+          </text>
+        </view>
+      </view>
+    </view>
+</view>

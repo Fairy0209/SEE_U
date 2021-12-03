@@ -1,0 +1,10 @@
+<view class="head">
+	<view>
+		<van-image bindtap="handleUpLoadImage" round width="5rem" height="5rem" src="{{userPhoto}}" />
+	</view>
+	<view class="head-btn">
+		<van-button disabled="{{disabled}}" slot="button" size="small" type="info" bindtap="handleBtn">设置自定义头像</van-button>
+		<van-button slot="button" icon="chat-o" size="small" type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">设置成微信头像</van-button>
+	</view>
+
+</view>

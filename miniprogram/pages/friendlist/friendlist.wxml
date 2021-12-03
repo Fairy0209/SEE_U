@@ -1,0 +1,22 @@
+<!-- 搜索 -->
+<view class="search">
+  <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+  <input type="text" placeholder="输入联系人" bindfocus="onbingfocus"></input>
+  <icon type="clear" size="13" class="xximg" wx:if="{{searchxx}}"     bindtap="onbingtop"></icon>
+ </view>
+
+<view wx:if="{{containershow}}">
+  <view class="friendList">
+  <text>好友列表：</text>
+  <navigator wx:for="{{ friendList }}" wx:key="{{ index }}" url="{{ '../detail/detail?userId=' + item._id }}" open-type="navigate">
+    <view class="friendList-item">
+      <view>
+        <image src="{{ item.userPhoto }}" />
+        <text>{{ item.nickName }}</text>
+      </view>
+      <text class="iconfont iconarrowRight"></text>
+    </view>
+  </navigator>
+</view>
+</view>
+

@@ -1,0 +1,7 @@
+/* components/callPhone/callPhone.wxss */
+.callPhone{
+  margin-left: 10rpx;
+}
+.callPhone text{
+  color: cornflowerblue;
+}

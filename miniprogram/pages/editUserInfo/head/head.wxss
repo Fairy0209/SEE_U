@@ -1,0 +1,10 @@
+/* miniprogram/pages/editUserInfo/head/head.wxss */
+.head{
+  margin: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.head-btn{
+  margin-top: 5%;
+}

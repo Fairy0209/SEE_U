@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/near/near",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/editUserInfo/editUserInfo",
+    "pages/detail/detail",
+    "pages/friendlist/friendlist"
+  ],
+  "window": {
+    "navigationStyle": "default",
+    "backgroundColor": "#e8dfdf",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#00724c",
+    "navigationBarTitleText": "📬alumni-book校园通讯录",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+   
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#e8dfdf",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "iconPath": "images/tabbar/index.png",
+        "selectedIconPath": "images/tabbar/indexselect.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/tabbar/near.png",
+        "selectedIconPath": "images/tabbar/nearselect.png",
+        "pagePath": "pages/near/near",
+        "text": "附近"
+      },
+      {
+        "iconPath": "images/tabbar/message.png",
+        "selectedIconPath": "images/tabbar/messageselect.png",
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "iconPath": "images/tabbar/user.png",
+        "selectedIconPath": "images/tabbar/userselect.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

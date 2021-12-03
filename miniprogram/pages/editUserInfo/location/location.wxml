@@ -1,0 +1,6 @@
+<!--miniprogram/pages/editUserInfo/location/location.wxml-->
+<view class="cells">
+	<text>是否开启位置共享</text>
+	<van-switch checked="{{ isLocation }}" bind:change="onChange" />
+</view>
+

@@ -1,0 +1,7 @@
+/* components/copyText/copyText.wxss */
+.copyText{
+  margin-left: 10rpx;
+}
+.copyText text{
+  color: cornflowerblue;
+}

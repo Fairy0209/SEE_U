@@ -1,0 +1,19 @@
+<!--miniprogram/pages/near/near.wxml-->
+
+<view class="near">
+<view class="map">
+  <map id="map" longitude="{{ longitude }}" latitude="{{ latitude }}" scale="14" show-location markers="{{markers}}" bindmarkertap="markertap"></map>
+</view>
+<view class="friendList">
+  <text>附近的同学</text>
+  <navigator wx:for="{{ friendList }}" wx:key="{{ index }}" url="{{ '../detail/detail?userId=' + item._id }}" open-type="navigate">
+    <view class="friendList-item">
+      <view>
+        <image src="{{ item.userPhoto }}" />
+        <text>{{ item.nickName }}</text>
+      </view>
+      <text class="iconfont iconarrowRight"></text>
+    </view>
+  </navigator>
+</view>
+</view>
